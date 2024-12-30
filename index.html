@@ -1,0 +1,185 @@
+<?php
+session_start();  // Start the session to manage login state if necessary
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILA Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background: #4CAF50;
+        color: white;
+        padding: 2px 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(189, 146, 29);
+        display: flex;
+      }
+      
+      header nav li {
+        padding: 10px 20px;
+        color: white; 
+      }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .home-icon {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+    }
+    .home-icon:hover {
+        color: #ddd;
+    }
+    #hero {
+        background: url('chatbot-hero.jpg') no-repeat center center/cover;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+    }
+    
+    #hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    
+    #hero button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #hero button:hover {
+        background-color: #45a049;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .feature {
+        display: inline-block;
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }    
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Intelligent Library Assistant Chatbot</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-item"><i class="fas fa-home"></i></a></li>
+                    <li><a href="register.php" class="nav-item">Register</a></li>
+                    <li><a href="login.php" class="nav-item">Login</a></li>
+                    <li><a href="#section1">Get Started</a></li>
+                    <li><a href="#section2">Chatbot INFO.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <!-- Main Hero Section -->
+    <div id="section1" style="height: 300px; background-color: lightblue;">
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Your ILA Chatbot</h2>
+        <center> <p> Click on Get Started to Register For Using Chatbot. </p>
+            <div class="cta-buttons">
+                <a href="register.php" class="btn btn-primary">Get Started</a>
+                <p> Click on Login, while already have an Account.</p>
+                <a href="login.php" class="btn btn-secondary">Login</a>
+            </div>
+        </center>
+        </div>
+    </section>
+</div>
+
+    <!-- Info Section -->
+    <section class="info">
+        <div id="section2" style="height: 200px; background-color: rgb(212, 231, 68);">
+        <h2>What is Intelligent Library Assistant Chatbot?</h2>
+        <p align="center">An Intelligent Library Assistant Chatbot is a smart online helper that assists library users by answering questions and helping them with library services.<br> It's like a virtual librarian that can talk to you through text, offering support at any time. This chatbot can give information about library, librarian and about <br> books. This Chatbot really Helpfull for users to find books. Nor its a simple one.</p>
+    </section>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024-25 Library Chatbot App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
